@@ -3,143 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio Data - NESIKA S M</title>
+    <title>My Bio-Data</title>
     <style>
-        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
             margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
         }
-
         .container {
-            background-color: #ffffff;
-            border-radius: 12px;
-            width: 80%;
-            max-width: 700px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-            padding: 30px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
             text-align: center;
         }
-
-        h1 {
-            font-size: 36px;
-            color: #4CAF50;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            font-size: 28px;
-            color: #555;
+        .section {
             margin-bottom: 20px;
-            font-weight: 400;
         }
-
-        .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        .section h2 {
+            border-bottom: 2px solid #555;
+            padding-bottom: 5px;
         }
-
-        .bio-details {
-            text-align: left;
-            margin-top: 30px;
-        }
-
-        .bio-details h3 {
-            font-size: 24px;
-            color: #4CAF50;
-            margin-bottom: 15px;
-        }
-
-        .bio-details ul {
-            list-style-type: none;
-            padding-left: 0;
-            font-size: 18px;
-        }
-
-        .bio-details li {
-            margin: 10px 0;
-            font-weight: 400;
-        }
-
-        .contact-info {
-            margin-top: 30px;
-            font-size: 18px;
-            color: #555;
-        }
-
-        .contact-info a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-
-        .button {
-            background-color: #4CAF50;
+        .toggle-btn {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 15px;
+            background-color: #333;
             color: white;
-            padding: 12px 24px;
-            border-radius: 25px;
             border: none;
             cursor: pointer;
-            font-size: 18px;
-            margin-top: 20px;
-            transition: background-color 0.3s;
+            border-radius: 5px;
         }
-
-        .button:hover {
-            background-color: #45a049;
+        .dark-mode {
+            background-color: #333;
+            color: white;
         }
-
-        .footer {
-            margin-top: 40px;
-            font-size: 14px;
-            color: #777;
+        .dark-mode .container {
+            background: #444;
         }
     </style>
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
 </head>
 <body>
-
+    <button class="toggle-btn" onclick="toggleTheme()">Toggle Theme</button>
     <div class="container">
-        <h1>Bio Data</h1>
-        <h2>NESIKA S M</h2>
+        <h1>My Bio-Data</h1>
+        
+        <div class="section">
+            <h2>Personal Details</h2>
+            <p><strong>Name:</strong> NESIKA S M </p>
+            <p><strong>DOB:</strong> january 18, 2003</p>
+            <p><strong>Languages:</strong> English, Tamil, Telugu</p>
+            <p><strong>Location:</strong> Salem, Tamil Nadu, India</p>
+        </div>
 
-        <!-- Profile Image -->
-        <img src="profile-placeholder.jpg" alt="Profile Image" class="profile-image">
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>Undergraduate:</strong> B. Sc in COMPUTER SCIENCE, PERIYAR UNIVERSITY, 2023</p>
+            <p><strong>Postgraduate:</strong> M.Sc. in COMPUTER SCIENCE, PERIYAR UNIVERSITY, 2025</p>
+        </div>
 
-        <!-- Bio Details -->
-        <div class="bio-details">
-            <h3>Personal Details</h3>
+        <div class="section">
+            <h2>Technical Skills</h2>
             <ul>
-                <li><strong>Name:</strong> NESIKA S M</li>
-                <li><strong>Age:</strong> 22</li>
-                <li><strong>Phone Number:</strong> 9965640786</li>
-                <li><strong>Address:</strong> Salem</li>
-                <li><strong>Email:</strong> <a href="mailto:nesikasm@gmail.com">nesikasm@gmail.com</a></li>
+                <li>Frontend: HTML, CSS, JavaScript</li>
+                <li>Backend: PHP, MySQL</li>
+                <li>IoT: Embedded Systems, Microcontrollers</li>
+                <li>Other: Git, Responsive Web Design</li>
             </ul>
         </div>
 
-        <!-- Contact Info -->
-        <div class="contact-info">
-            <h3>Contact Me</h3>
-            <p>If you would like to reach me, feel free to <a href="mailto:nesikasm@gmail.com">send an email</a> or give me a call!</p>
+        <div class="section">
+            <h2>Work Experience</h2>
+            <p><strong>Internships:</strong></p>
+            <ul>
+                <li>Odugaa Tech (IoT Internship) - Worked on smart automation systems</li>
+                <li>Algox Fusion (Web Development) - Developed dynamic web applications</li>
+            </ul>
         </div>
 
-        <!-- Button to Email -->
-        <a href="mailto:nesikasm@gmail.com" class="button">Email Me</a>
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>pharmacy distribution:</strong> Web development project using HTML, CSS, JavaScript, PHP, and MySQL</li>
+                <li><strong>Street Light Automation System (IoT):</strong> Designed an IoT-based system to automate street lighting</li>
+            </ul>
+        </div>
 
-        <!-- Footer -->
-        <div class="footer">
-            <p>Created with care by NESIKA S M</p>
+        <div class="section">
+            <h2>Achievements & Extracurricular Activities</h2>
+            <ul>
+                <li>Presented multiple voluntary seminars during college and school</li>
+                <li>Participated in technical symposiums and coding competitions</li>
+               
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Contact</h2>
+            <p><strong>Email:</strong> nesikasm@gmail.com</p>
+            <p><strong>Phone:</strong> 9965640786</p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/suganyag" target="_blank">linkedin.com/in/suganyag</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/suganyag" target="_blank">github.com/suganyag</a></p>
         </div>
     </div>
-
 </body>
 </html>
