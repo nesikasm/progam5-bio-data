@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bio Data - NESIKA S M</title>
     <style>
-        /* General Styles */
+        /* Global Styles */
         body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: #fff;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
             margin: 0;
             padding: 0;
             display: flex;
@@ -19,107 +19,90 @@
         }
 
         .container {
-            background-color: #fff;
-            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 12px;
             width: 80%;
-            max-width: 750px;
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            max-width: 700px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            padding: 30px;
             text-align: center;
-            color: #333;
-            background: #ffffff;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .container:hover {
-            transform: scale(1.02);
         }
 
         h1 {
-            font-size: 40px;
-            color: #2575fc;
+            font-size: 36px;
+            color: #4CAF50;
             margin-bottom: 10px;
         }
 
         h2 {
-            font-size: 30px;
-            color: #6a11cb;
+            font-size: 28px;
+            color: #555;
             margin-bottom: 20px;
-            font-weight: 500;
+            font-weight: 400;
         }
 
         .profile-image {
-            border-radius: 50%;
             width: 150px;
             height: 150px;
+            border-radius: 50%;
             margin-bottom: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .bio-details {
             text-align: left;
-            font-size: 18px;
-            margin-top: 20px;
-            padding-left: 30px;
-            font-weight: 400;
-            color: #333;
+            margin-top: 30px;
         }
 
         .bio-details h3 {
-            font-size: 22px;
-            color: #2575fc;
-            margin-bottom: 10px;
+            font-size: 24px;
+            color: #4CAF50;
+            margin-bottom: 15px;
         }
 
         .bio-details ul {
             list-style-type: none;
             padding-left: 0;
+            font-size: 18px;
         }
 
         .bio-details li {
-            margin: 8px 0;
-            font-size: 18px;
-        }
-
-        .bio-details li span {
-            font-weight: bold;
-            color: #2575fc;
+            margin: 10px 0;
+            font-weight: 400;
         }
 
         .contact-info {
-            margin-top: 20px;
+            margin-top: 30px;
             font-size: 18px;
-            color: #444;
+            color: #555;
         }
 
-        .contact-info p {
-            margin: 5px 0;
-            font-weight: 500;
-            color: #6a11cb;
+        .contact-info a {
+            color: #4CAF50;
+            text-decoration: none;
         }
 
         .button {
-            background-color: #2575fc;
+            background-color: #4CAF50;
             color: white;
             padding: 12px 24px;
-            border-radius: 30px;
+            border-radius: 25px;
             border: none;
             cursor: pointer;
-            font-size: 16px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
         }
 
         .button:hover {
-            background-color: #6a11cb;
+            background-color: #45a049;
         }
 
         .footer {
+            margin-top: 40px;
             font-size: 14px;
-            margin-top: 20px;
-            color: #666;
+            color: #777;
         }
-
     </style>
 </head>
 <body>
@@ -127,26 +110,26 @@
     <div class="container">
         <h1>Bio Data</h1>
         <h2>NESIKA S M</h2>
-        
+
         <!-- Profile Image -->
         <img src="profile-placeholder.jpg" alt="Profile Image" class="profile-image">
-        
+
         <!-- Bio Details -->
         <div class="bio-details">
             <h3>Personal Details</h3>
             <ul>
-                <li><span>Name:</span> NESIKA S M</li>
-                <li><span>Age:</span> 22</li>
-                <li><span>Phone Number:</span> 9965640786</li>
-                <li><span>Address:</span> Salem</li>
-                <li><span>Email:</span> <a href="mailto:nesikasm@gmail.com" style="color: #2575fc; text-decoration: none;">nesikasm@gmail.com</a></li>
+                <li><strong>Name:</strong> NESIKA S M</li>
+                <li><strong>Age:</strong> 22</li>
+                <li><strong>Phone Number:</strong> 9965640786</li>
+                <li><strong>Address:</strong> Salem</li>
+                <li><strong>Email:</strong> <a href="mailto:nesikasm@gmail.com">nesikasm@gmail.com</a></li>
             </ul>
         </div>
 
         <!-- Contact Info -->
         <div class="contact-info">
-            <h3>Contact Info</h3>
-            <p>If you need to reach me, feel free to send an email or give me a call!</p>
+            <h3>Contact Me</h3>
+            <p>If you would like to reach me, feel free to <a href="mailto:nesikasm@gmail.com">send an email</a> or give me a call!</p>
         </div>
 
         <!-- Button to Email -->
@@ -154,7 +137,7 @@
 
         <!-- Footer -->
         <div class="footer">
-            <p>Designed with ❤️ by NESIKA</p>
+            <p>Created with care by NESIKA S M</p>
         </div>
     </div>
 
